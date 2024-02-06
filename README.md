@@ -33,6 +33,6 @@ Got questions or cool ideas? Let's chat—I'm all ears and excited to connect wi
 Feel free to reach out, connect, or message me if you have any questions, ideas, or opportunities to discuss. I'm always open to exploring the endless possibilities that our professional community has to offer.
 
 - ✉️ Email: [contact@ivancasenda.com](mailto:contact@ivancasenda.com)
-- 🌐 LinkedIn: [linkedin.com/in/ivancasenda](https://linkedin.com/in/ivancasenda)
+- 🌐 LinkedIn: [linkedin.com/in/ivancasenda](https://linkedin.com/in/ivan-casenda)
 
 Let's connect and explore the exciting intersections of technology and innovation! 🚀
