@@ -1,38 +1,23 @@
-# Hi there, I'm Ivan Casenda 👋
+# Ivan Casenda
 
-## 🚀 About Me
+Platform and backend engineer in Indonesia.
 
-I'm a Software Developer and self-proclaimed Tech Explorer 😉. Welcome to my corner of the digital universe! I love making data come alive through Web Apps and Machine Learning. Proud Binus University grad, I've been into tech since forever!
+I build and run a multi-tenant Odoo SaaS. External paying clients, two years in production. I handle the architecture, the infrastructure, the application modules, CI, and on-call.
 
-I'm all about embracing challenges and keeping up with the latest in this ever-changing industry. Whether it's simplifying tasks, enhancing user experiences, or helping companies crush their goals, I'm in!
+Most of the work is in private repos, so here's a rough idea of what's in them.
 
-Got questions or cool ideas? Let's chat—I'm all ears and excited to connect with you! 😊
+**tenantd** is a tenant-lifecycle control plane written in Python. An in-cluster agent claims work under a lease, heartbeats while it holds one, and submits each step back as it finishes. Resource fencing keeps two agents off the same tenant. The control plane itself never holds a general-purpose Kubernetes credential, which was the constraint I designed around first.
 
-## 💻 Tech Stack
+**The platform** is moving from Docker Compose to Kubernetes on Oracle OKE, while it's live. OpenTofu for production and staging, Argo CD, Helm, and CloudNativePG for Postgres, with backups I've restored from.
 
-- **Python**
-- **Google Cloud Platform (GCP)**
-- **Angular**
-- **Pandas**
-- **Tensorflow**
-- **Tensorflow Extended**
+**Odoo** is where most of the application work goes. Custom modules for accounting, sales, inventory and POS, plus Indonesian e-Faktur (Coretax) compliance. Multiple Odoo majors run side by side, so tenants upgrade when they're ready rather than all at once.
 
-## 🌟 Projects
+Python, Kubernetes, PostgreSQL, OpenTofu, Argo CD, Helm, FastAPI, OpenTelemetry.
 
-- [Semantic Search in Action: Machine Learning + Vector Search](https://github.com/ivancasenda/semantic-search)
-- [InvoiceHub: Simple Invoicing](https://github.com/ivancasenda/invoicehub)
-- [Image Classification: Motorist Behavior](https://github.com/ivancasenda/motorist-behavior-ml)
+## Public work
 
-## 📜 Certificates
+**[semantic-search](https://github.com/ivancasenda/semantic-search)** — semantic search over Stack Overflow data. MiniLM embeddings indexed in Vertex AI Vector Search, FastAPI backend, Angular frontend, and a TFX pipeline that handles ingestion and refreshes the index.
 
-- [Tensorflow Developer Certificate](https://www.credential.net/7044956b-c402-4c3f-b465-db268f023852#gs.2vdxbw)
-- [Databricks Certified Associate Developer for Apache Spark 3.0](https://credentials.databricks.com/6e079068-b65e-4aad-9dd5-4ed1f17f4253#gs.2vdxkg)
+**[invoicehub](https://github.com/ivancasenda/invoicehub)** — invoicing app. Spring Boot and Angular, PDFs via JasperReports.
 
-## 📧 Get in Touch
-
-Feel free to reach out, connect, or message me if you have any questions, ideas, or opportunities to discuss. I'm always open to exploring the endless possibilities that our professional community has to offer.
-
-- ✉️ Email: [contact@ivancasenda.com](mailto:contact@ivancasenda.com)
-- 🌐 LinkedIn: [linkedin.com/in/ivancasenda](https://linkedin.com/in/ivancasenda)
-
-Let's connect and explore the exciting intersections of technology and innovation! 🚀
+**[motorist-behavior-ml](https://github.com/ivancasenda/motorist-behavior-ml)** — ResNet classifier that identifies what a driver is doing from an image.
